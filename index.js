@@ -3,7 +3,7 @@
 const LogSource = require("./lib/log-source");
 const Printer = require("./lib/printer");
 
-function runSolutions(sourceCount) {
+function runSolutions(sourceCount) { 
   return new Promise((resolve, reject) => {
     /**
      * Challenge Number 1!
@@ -57,7 +57,7 @@ function runSolutions(sourceCount) {
       require("./solution/async-sorted-merge")(asyncLogSources, new Printer())
         .then(resolve)
         .catch(reject);
-    });
+    }) ;
   });
 }
 
